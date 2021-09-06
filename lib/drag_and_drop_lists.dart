@@ -443,14 +443,12 @@ class DragAndDropListsState extends State<DragAndDropLists> {
       }
       return outerListHolder;
     } else {
-      return Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            widget.contentsWhenEmpty ?? Text('Empty'),
-            dragAndDropListTarget,
-          ],
-        ),
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          widget.contentsWhenEmpty ?? Text('Empty'),
+          dragAndDropListTarget,
+        ],
       );
     }
   }
